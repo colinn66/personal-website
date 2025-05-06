@@ -1,24 +1,22 @@
 {
-  "name": "website-backend",
+  "name": "demo-web-backend",
   "version": "1.0.0",
-  "description": "网站后端项目",
+  "description": "Demo web project backend",
   "scripts": {
-    "dev": "nodemon src/index.ts",
+    "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
     "build": "tsc",
-    "start": "node dist/index.js"
+    "start": "node dist/server.js"
   },
   "dependencies": {
-    "express": "^4.18.2",
     "cors": "^2.8.5",
-    "dotenv": "^16.3.1",
-    "helmet": "^7.0.0"
+    "express": "^4.18.2",
+    "dotenv": "^16.0.3"
   },
   "devDependencies": {
-    "@types/express": "^4.17.17",
     "@types/cors": "^2.8.13",
-    "@types/node": "^20.3.3",
-    "typescript": "^5.1.6",
-    "nodemon": "^2.0.22",
-    "ts-node": "^10.9.1"
+    "@types/express": "^4.17.17",
+    "@types/node": "^18.16.3",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.0.4"
   }
 }
