@@ -1,42 +1,50 @@
-# 个人网站
+# 网站项目
 
-这是我的个人网站项目，用于展示个人信息、作品集和博客文章。
+这是一个全栈网站项目，包含前端和后端代码。
 
-## 项目特点
+## 项目结构
 
-- 现代化的响应式设计
-- 个人信息展示
-- 作品集展示
-- 博客系统
-
-## 技术栈
-
-- HTML5/CSS3
-- JavaScript
-- React.js
-- Node.js
-
-## 开发计划
-
-- [ ] 首页设计与实现
-- [ ] 个人简介页面
-- [ ] 作品集展示
-- [ ] 博客系统
-- [ ] 响应式布局优化
-
-## 本地开发
-
-```bash
-# 安装依赖
-npm install
-
-# 启动开发服务器
-npm run dev
-
-# 构建生产版本
-npm run build
 ```
+├── frontend/           # 前端代码
+│   ├── src/           # 源代码
+│   ├── public/        # 静态资源
+│   └── package.json   # 前端依赖配置
+├── backend/           # 后端代码
+│   ├── src/           # 源代码
+│   └── package.json   # 后端依赖配置
+├── docs/              # 项目文档
+└── README.md         # 项目说明
+```
+
+## 开发环境要求
+
+- Node.js >= 14.0.0
+- npm >= 6.0.0
+
+## 快速开始
+
+1. 克隆项目
+2. 安装依赖
+   ```bash
+   # 安装前端依赖
+   cd frontend
+   npm install
+
+   # 安装后端依赖
+   cd ../backend
+   npm install
+   ```
+3. 启动开发服务器
+   ```bash
+   # 启动前端开发服务器
+   cd frontend
+   npm run dev
+
+   # 启动后端服务器
+   cd ../backend
+   npm run dev
+   ```
 
 ## 许可证
 
-MIT License
+MIT
